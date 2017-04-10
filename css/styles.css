@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Solomon Sans Normal';
+  src : url("../fonts/Solomon Sans Normal.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Solomon Sans Light';
+  src : url("../fonts/Solomon Sans Light.otf");
+  font-style: normal;
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 'Solomon Sans Book';
+  src : url("../fonts/Solomon Sans Book.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Solomon Sans Bold';
+  src : url("../fonts/Solomon Sans Bold.otf");
+  font-style: normal;
+  font-weight: bold;
+}
+body {
+  font-family: 'Solomon Sans Book' sans-serif;
+}
+.main {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.header {
+  padding: 15px 30px;
+  background: url('../images/background.png') no-repeat;
+  background-size: cover;
+}
+.header-bar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-weight: 200;
+  font-size: 15px;
+}
+.header-bar__top-left {
+  display: flex;
+}
+.header-bar__top-right {
+  display: flex;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  align-items: center;;
+  text-transform: uppercase;
+  padding-right: 25px;
+  font-family: Solomon Sans Normal;
+}
+.nav__link {
+  color: #666;
+  padding: 50px 25px;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: #3283c0;
+}
+.language {
+  padding: 15px 25px 20px 50px;
+  border-left: 1px solid #666;
+}
+.header-bar__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Solomon Sans Light';
+}
+.header-bar__bottom-title {
+  padding-top: 80px;
+  letter-spacing: -2px;
+  color: #333;
+  font-size: 80px;
+  font-weight: lighter;
+  line-height: 72px;
+  text-transform: uppercase;
+}
+.header-bar__bottom-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3283c0;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-bottom: 80px;
+  border: 2px solid #3283c0;
+}
+.header-bar__bottom-img {
+  border-right: 2px solid #3283c0;
+  padding: 15px 15px;
+}
+.header-bar__bottom-text {
+  padding: 20px 25px;
+  text-transform: uppercase;
+}
+.content__menu-wrapper {
+  display: flex;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+}
+.content__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content__menu-item {
+  display: flex;
+  position: relative;
+}
+.content__menu-item:first-child:after {
+  position: absolute;
+  right: -35px;
+  top: 25px;
+  content: "";
+  background: #DCDCDC;
+  width: 1px;
+  height: 20px;
+}
+.content__menu-item:last-child {
+  padding-left: 70px;
+}
+.content__menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #3283c0;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 25px 0 20px;
+}
+.content__menu-link:active, .content__menu-link_active {
+  border-bottom: 3px solid black;
+  color: black;
+  padding: 25px 0 17px;
+}
+.content__description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 260px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.content__description-headers {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 100px 110px;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: -1.6px;
+  font-family: Conv_Solomon Sans Book;
+  color: #333;
+}
+.title {
+  font-size: 30px;
+  font-family: Solomon Sans Book;
+  letter-spacing: -1.6px;
+}
+.second-title {
+  text-transform: uppercase;
+  font-family: Solomon Sans Book;
+  font-size: 27px;
+  font-weight: normal;
+}
+.content__description-specification {
+  display: flex;
+  align-items:center;
+  font-family: Roboto;
+  color: #818c95;
+  font-size: 18px;
+}
+.content__description-specification:before {
+  content: "";
+  margin: 65px;
+  background: #DCDCDC;
+  width: 1px;
+  height: 80px;
+}
+.content__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 800px;
+}
+.content__body-theme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  height: 400px;
+  padding-top: 200px;
+}
+.body-title {
+  font-family: Roboto;
+  color: #818c95;
+  font-size: 18px;
+  text-align: center;
+}
+.body-title:before {
+  padding-top: 100px;
+}
+.content__body-img {
+  display: flex;
+  width: 33.33%;
+  height: 400px;
+}
+.aircraft {
+  background: url('../images/aircraft.png') no-repeat;
+  background-size:cover;
+}
+.content__body-service {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 400px;
+  background-color: #F1F5F7;
+  text-transform: uppercase;
+  font-family: Solomon Sans Book;
+  font-size: 27px;
+  font-weight: normal;
+  color: #333;
+}
+.content__body-service:after {
+  content: "";
+  position: absolute;
+  right: 45%;
+  top: 270px;
+  background: #DCDCDC;
+  width: 90px;
+  height: 1px;
+}
+.skyservice {
+  background-image: url('../images/skyservice-book.png');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+.content__body-trade {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-top: 80px;
+  width: 33.33%;
+  height: 400px;
+  background-color: #91c2e6;
+  background-image: url('../images/perfume.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  color: white;
+  text-transform: uppercase;
+  font-family: Solomon Sans Book;
+  font-size: 27px;
+  font-weight: normal;
+}
+.content__body-trade:after {
+  content: "";
+  position: absolute;
+  right: 40%;
+  top: 130px;
+  background: white;
+  width: 90px;
+  height: 1px;
+}
+.content__participants {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 260px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.content__participants-header {
+  display: flex;
+  padding: 120px 0 120px 310px;
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: -1.6px;
+  font-family: Conv_Solomon Sans Book;
+  color: #333;
+}
+.content__participants-specification {
+  font-family: Roboto;
+  color: #818c95;
+  font-size: 18px;
+}
